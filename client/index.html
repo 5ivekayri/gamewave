@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameWave</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #1a1a2e;
+            color: #e94560;
+            font-family: 'Press Start 2P', cursive;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: linear-gradient(to right, #0f3460, #53354a);
+            padding: 20px;
+            border-bottom: 5px solid #e94560;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        header h1 {
+            font-size: 2rem;
+            text-shadow: 3px 3px 0 #000;
+            margin: 0;
+        }
+        nav {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        nav a {
+            color: #e94560;
+            text-decoration: none;
+            font-size: 0.9rem;
+            text-shadow: 2px 2px 0 #000;
+            transition: color 0.2s;
+        }
+        nav a:hover {
+            color: #fff;
+        }
+        h2 {
+            font-size: 1.5rem;
+            text-shadow: 2px 2px 0 #000;
+            margin-bottom: 20px;
+        }
+        .game-library {
+            margin-top: 20px;
+            padding: 20px;
+        }
+        .game-list {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .game-item {
+            background-color: #16213e;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px #e94560;
+            cursor: pointer;
+            width: 150px;
+            text-align: center;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .game-item:hover {
+            background-color: #0f3460;
+            transform: scale(1.1);
+            box-shadow: 0 0 20px #e94560;
+        }
+        .game-item img {
+            width: 100%;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        .game-item span {
+            font-size: 0.8rem;
+            color: #fff;
+        }
+        footer {
+            margin-top: 40px;
+            padding: 10px;
+            background: linear-gradient(to right, #0f3460, #53354a);
+            border-top: 5px solid #e94560;
+            font-size: 0.8rem;
+            color: #fff;
+        }
+        footer a {
+            color: #e94560;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>GameWave</h1>
+        <nav>
+            <a href="#">Войти</a>
+            <a href="#">Консоли</a>
+            <a href="#">Библиотека Игр</a>
+            <a href="#">О Нас</a>
+            <a href="#">Регистрация</a>
+        </nav>
+    </header>
+    <main>
+        <section class="game-library">
+            <h2>Библиотека игр</h2>
+            <div class="game-list">
+                <div class="game-item">
+                    <img src="https://via.placeholder.com/150" alt="Game 1">
+                    <span>Super Mario Bros</span>
+                </div>
+                <div class="game-item">
+                    <img src="https://via.placeholder.com/150" alt="Game 2">
+                    <span>The Legend of Zelda</span>
+                </div>
+                <div class="game-item">
+                    <img src="https://via.placeholder.com/150" alt="Game 3">
+                    <span>Metroid</span>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>© 2025 GameWave. Все права защищены. | <a href="#">Политика конфиденциальности</a></p>
+    </footer>
+</body>
+</html>
